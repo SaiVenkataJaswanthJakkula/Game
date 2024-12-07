@@ -1,0 +1,43 @@
+print('''
+                       _
+                     ,' '.
+                    /     \
+                  ^ |  _  | ^
+                 | || / \ || |
+                 | |||.-.||| |
+                 | |||   ||| |
+                 | |||   ||| |
+                 | |||   ||| |
+                 | |||   ||| |
+                 | ,'     '. |
+                 ,'__     __`.
+                /____  |  ____\
+                 /_\ |_|_| /_\
+                 .:   : :   :.
+                 : .  : .  : :
+                  ::   ::   ::
+                 : : .: :. : :
+                .: :.: : :. : .
+                : : .: :  ::  :
+                .:  .   : :   ..
+''')
+print("Welcome to Treasure Island")
+print("Your Mission is to find a Treasure")
+direction= str(input("Would You like to go Right or Left"))
+if direction=="Left" or direction=="left":
+    action = str(input("Would You like to go Wait or Swim"))
+    if action == "wait" or action == "Wait":
+        door = str(input("which door You Want to Open. Blue, Red & Yellow"))
+        if door == "Blue" or door == "blue":
+            print("Eaten By beasts....Game Over")
+        elif door == "Red" or door == "red":
+            print("Burned by Fire....Game Over")
+        elif door == "Yellow" or door == "yellow":
+            print("You Win!")
+        else:
+            print("Game Over")
+    else:
+        print("Game Over")
+
+else:
+    print("Game Over")
